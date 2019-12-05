@@ -16,11 +16,12 @@ function MsgController($scope) {
     splitted.forEach(removeEmpty);
 
     function removeEmpty(item, index) {
-      if(item == "")
+      if(item == "" || item == " " )
       length -= 1;
 }
     console.log(length);
-    if(length < 4) $scope.state = "Enjoy!";
+    if(length == 0) $scope.state = "Please enter data first";
+    else if(length < 4) $scope.state = "Enjoy!";
     else  $scope.state = "Too Much!";
   };
 
