@@ -14,7 +14,7 @@ function NarrowItDownController($scope,MenuSearchService){
   $scope.search = "";
   controller.found = [];
 
-  controller.isEmpty  = function (){
+  controller.isEmpty    = function (){
   if(controller.found.length ==0 )return true;
   return false;
   };

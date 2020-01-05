@@ -19,7 +19,7 @@
     <ul ng-repeat ="item in controller.found">
       <li>Buy {{item.name}}  ,  {{item.description}} <button class="btn btn-default" ng-click= 'controller.remove(item.name)'><span class="glyphicon glyphicon-ok"></span> Don't want this one!</button></li>
     </ul>
-    <div ng-if = "controller.found.length===0" class="emptyMessage">Nothing bought yet.</div>
+    <div ng-if = "controller.found.length===0" class="emptyMessage">Nothing found</div>
 
 
     <!-- found-items should be implemented as a component -->
